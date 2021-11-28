@@ -1,6 +1,7 @@
 {
     "name": "binance-helper",
     "version": "1.0.2",
+    "main": "index.js",
     "dependencies": {
         "axios": "^0.24.0"
     }
