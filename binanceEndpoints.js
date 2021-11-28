@@ -1,6 +1,4 @@
 const axios = require('axios')
-const dotenv = require('dotenv');
-const https = require('https');
 dotenv.config();
 
 async function getBTCUSDT() {
