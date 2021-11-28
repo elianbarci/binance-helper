@@ -1,0 +1,7 @@
+{
+    "name": "binance-helper",
+    "version": "1.0.1",
+    "dependencies": {
+        "axios": "^0.24.0"
+    }
+}
