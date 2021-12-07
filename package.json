@@ -16,8 +16,5 @@
     "licence": "MIT",
     "bugs": {
         "url": "https://github.com/elianbarci/binance-helper/issues"
-      },
-    "publishConfig": {
-        "registry":"https://npm.pkg.github.com"
       }
 }
