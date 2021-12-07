@@ -1,5 +1,5 @@
 {
-    "name": "@elianbarci/binance-helper",
+    "name": "binance-helper",
     "version": "1.1.9",
     "main": "index.js",
     "dependencies": {

@@ -27,8 +27,8 @@ jobs:
         with:
           node-version: 16
           registry-url: 'registry=https://npm.pkg.github.com'
-          scope: '@coolneutron'
+          scope: '@elianbarci'
       - run: npm ci
       - run: npm publish --access=public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
