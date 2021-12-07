@@ -1,5 +1,4 @@
 const axios = require('axios')
-dotenv.config();
 
 async function getBTCUSDT() {
 
