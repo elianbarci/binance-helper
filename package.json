@@ -16,9 +16,6 @@
     "licence": "MIT",
     "bugs": {
         "url": "https://github.com/elianbarci/binance-helper/issues"
-      },
-    "scripts": {
-        "start": "node index.js"
-    }
+      }
     
 }
