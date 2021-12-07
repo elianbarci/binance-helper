@@ -11,5 +11,10 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/elianbarci/binance-helper"
-    }
+    },
+    "keywords": ["binance", "node", "http", "axios", "middleware"],
+    "licence": "MIT",
+    "bugs": {
+        "url": "https://github.com/elianbarci/binance-helper/issues"
+      }
 }
