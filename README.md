@@ -1,6 +1,6 @@
 # Binance Helper
 
-[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.org/package/binance-helper)
+[![npm version](https://img.shields.io/badge/npm-1.0.9-orange)](https://www.npmjs.org/package/binance-helper)
 
 Functions that help you avoid creating your own middleware to connect with the Binance API.
 
