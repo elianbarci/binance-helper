@@ -8,6 +8,7 @@
     "author": {
         "name": "elianbarci"
       },
+    "description": "Functions that help you avoid creating your own middleware to connect with the Binance API.",
     "repository": {
         "type": "git",
         "url": "git@github.com:elianbarci/binance-helper.git"
