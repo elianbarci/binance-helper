@@ -7,7 +7,7 @@ async function getBTCUSDT() {
             method: 'GET',
             timeout: 8000,
             params: {
-                symbol : "BTCUSDT"
+                symbol : "BTCUSDTT"
             }
         })
 
