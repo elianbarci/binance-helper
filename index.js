@@ -1,6 +1,8 @@
 const axios = require('axios')
+const dotenv = require('dotenv');
+dotenv.config();
 
-async function getBTCUSDT() {
+async function getBTCUSDT(testing) {
 
     const res = await axios({
             url: 'https://api.binance.com/api/v3/ticker/price',
@@ -60,6 +62,64 @@ async function getBADGERUSDT() {
 
         })
 
+
+    return res.data
+
+}
+
+async function sell(symbol, amount) {
+
+    const res = await axios({
+            url: ( (process.env.PRODUCTIVE == true) ? process.env.BINANCE_API : process.env.BINANCE_TESTNET_API ),
+            method: 'GET',
+            timeout: 8000,
+            params: {
+                symbol: symbol,
+                amount: amount,
+            }
+        })
+
+        .catch(err => {
+            console.log("Hubo un error")
+            if (err.response) {
+                console.log(err.response)
+                throw err
+            } else if (err.request) {
+                throw err
+            } else {
+                throw err
+            }
+
+        });
+
+    return res.data
+
+}
+
+async function buy(symbol, amount) {
+
+    const res = await axios({
+            url: ( (process.env.PRODUCTIVE == true) ? process.env.BINANCE_API : process.env.BINANCE_TESTNET_API ),
+            method: 'GET',
+            timeout: 8000,
+            params: {
+                symbol: symbol,
+                amount: amount,
+            }
+        })
+
+        .catch(err => {
+            console.log("Hubo un error")
+            if (err.response) {
+                console.log(err.response)
+                throw err
+            } else if (err.request) {
+                throw err
+            } else {
+                throw err
+            }
+
+        });
 
     return res.data
 

@@ -3,23 +3,29 @@
     "version": "1.2.2",
     "main": "index.js",
     "dependencies": {
-        "axios": "^0.24.0"
+        "axios": "^0.24.0",
+        "dotenv": "^11.0.0"
     },
     "author": {
         "name": "elianbarci"
-      },
+    },
     "description": "Functions that help you avoid creating your own middleware to connect with the Binance API.",
     "repository": {
         "type": "git",
         "url": "git@github.com:elianbarci/binance-helper.git"
     },
-    "keywords": ["binance", "node", "http", "axios", "middleware"],
+    "keywords": [
+        "binance",
+        "node",
+        "http",
+        "axios",
+        "middleware"
+    ],
     "licence": "MIT",
     "bugs": {
         "url": "https://github.com/elianbarci/binance-helper/issues"
-      },
+    },
     "scripts": {
         "test": "node index.js"
     }
-    
 }
