@@ -14,16 +14,13 @@ async function getBTCUSDT(testing) {
         })
 
         .catch(err => {
-            console.log("Hubo un erro")
+            console.log("Hubo un error")
             if (err.response) {
                 console.log(err.response)
                 throw err
             } else if (err.request) {
-                // client never received a response, or request never left
-                // console.log(err.request)
                 throw err
             } else {
-                // anything else
                 throw err
             }
 
@@ -161,3 +158,5 @@ async function getHistoricals(symbol, startTime, endTime, interval) {
 exports.getBTCUSDT = getBTCUSDT
 exports.getBADGERUSDT = getBADGERUSDT
 exports.getHistoricals = getHistoricals
+exports.buy = buy
+exports.sell = sell
