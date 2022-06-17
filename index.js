@@ -32,6 +32,63 @@ async function getBTCUSDT(testing) {
 }
 
 
+async function getBTCUP() {
+
+    const res = await axios({
+            url: 'https://api.binance.com/api/v3/ticker/price',
+            method: 'GET',
+            timeout: 8000,
+            params: {
+                symbol : "BTCUP"
+            }
+        })
+
+        .catch(err => {
+
+            if (err.response) {
+                throw err
+            } else if (err.request) {
+                throw err
+            } else {
+                throw err
+            }
+
+        })
+
+
+    return res.data
+
+}
+
+async function getBTCDOWN() {
+
+    const res = await axios({
+            url: 'https://api.binance.com/api/v3/ticker/price',
+            method: 'GET',
+            timeout: 8000,
+            params: {
+                symbol : "BTCDOWN"
+            }
+        })
+
+        .catch(err => {
+
+            if (err.response) {
+                throw err
+            } else if (err.request) {
+                throw err
+            } else {
+                throw err
+            }
+
+        })
+
+
+    return res.data
+
+}
+
+
 async function getBADGERUSDT() {
 
     const res = await axios({
@@ -155,8 +212,8 @@ async function getHistoricals(symbol, startTime, endTime, interval) {
 }
 
 
+exports.getBTCUP = getBTCUP
+exports.getBTCDOWN = getBTCDOWN
 exports.getBTCUSDT = getBTCUSDT
 exports.getBADGERUSDT = getBADGERUSDT
 exports.getHistoricals = getHistoricals
-exports.buy = buy
-exports.sell = sell
